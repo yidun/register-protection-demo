@@ -1,4 +1,8 @@
-# 注册保护 示例demo
+# register-protection-demo
+
+易盾·注册保护服务 示例demo
+
+# 模块说明
 
 此项目包含sdk示例demo 和 check示例demo，详细参见各子项目
 
