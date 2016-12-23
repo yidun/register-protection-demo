@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">易盾安全注册demo</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="nickname">昵称</string>
+    <string name="register">注册</string>
+</resources>
