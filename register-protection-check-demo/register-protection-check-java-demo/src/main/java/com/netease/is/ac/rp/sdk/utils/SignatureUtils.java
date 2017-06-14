@@ -20,10 +20,10 @@ public class SignatureUtils {
         String[] keys = params.keySet().toArray(new String[0]);
         Arrays.sort(keys);
 
-        // 2. 按照排序拼接参数名与参数值
+        // 2. 按照排序拼接参数名与参数值，如果参数值为null请拼接空字符
         StringBuffer paramBuffer = new StringBuffer();
         for (String key : keys) {
-            paramBuffer.append(key).append(params.get(key));
+            paramBuffer.append(key).append(params.get(key) == null ? "" : params.get(key));
         }
         // 3. 将secretKey拼接到最后
         paramBuffer.append(secretKey);
