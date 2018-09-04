@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import com.netease.mobsecurity.rjsb.watchman;
+import com.netease.mobsec.rjsb.watchman;
 
 public class MainActivity extends Activity {
     private EditText mEtUsername, mEtPsd , mEtNickname;
