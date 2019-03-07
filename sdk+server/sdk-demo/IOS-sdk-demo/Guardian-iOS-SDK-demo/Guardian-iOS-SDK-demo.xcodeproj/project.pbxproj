@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2193752231259800BA6CA4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2193742231259800BA6CA4 /* AdSupport.framework */; };
 		E656F1A51FB479F9001ABE82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E656F1A41FB479F9001ABE82 /* AppDelegate.m */; };
 		E656F1AB1FB479F9001ABE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E656F1A91FB479F9001ABE82 /* Main.storyboard */; };
 		E656F1AD1FB479F9001ABE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E656F1AC1FB479F9001ABE82 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC2193742231259800BA6CA4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E656F1A01FB479F9001ABE82 /* Guardian-iOS-SDK-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guardian-iOS-SDK-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E656F1A31FB479F9001ABE82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E656F1A41FB479F9001ABE82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2193752231259800BA6CA4 /* AdSupport.framework in Frameworks */,
 				E656F1D71FB47A2E001ABE82 /* Guardian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +126,7 @@
 		E656F1D51FB47A2D001ABE82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC2193742231259800BA6CA4 /* AdSupport.framework */,
 				E656F1D61FB47A2E001ABE82 /* Guardian.framework */,
 			);
 			name = Frameworks;
@@ -427,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7ZZQ73G43;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "Guardian-iOS-SDK-demo/Info.plist";
@@ -442,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7ZZQ73G43;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "Guardian-iOS-SDK-demo/Info.plist";
