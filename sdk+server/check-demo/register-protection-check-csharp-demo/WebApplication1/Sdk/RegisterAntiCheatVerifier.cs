@@ -26,7 +26,7 @@ namespace RegisterProtectionDemo.Sdk
     };
 
     /// <summary>
-    /// 易盾验证码二次校验接口简单封装demo
+    /// check校验封装
     /// </summary>
     public class RegisterAntiCheatVerifier
     {
@@ -44,10 +44,9 @@ namespace RegisterProtectionDemo.Sdk
         }
         
         /// <summary>
-        /// 向易盾验证码后台发起二次校验请求
+        /// 发起二次校验请求
         /// </summary>
-        /// <param name="validate">二次校验请求字符串</param>
-        /// <param name="user">当前用户信息，可以为空字符串</param>
+        /// <param name="token">用户校验传递的token</param>
         /// <returns></returns>
         public VerifyResultType verify(string token)
         {
@@ -128,7 +127,7 @@ namespace RegisterProtectionDemo.Sdk
     }
 
     /// <summary>
-    /// 易盾验证码密钥对
+    /// 业务密钥对
     /// </summary>
     public class NESecretPair
     {
