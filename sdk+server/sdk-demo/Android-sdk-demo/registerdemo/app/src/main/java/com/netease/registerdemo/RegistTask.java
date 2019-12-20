@@ -10,7 +10,7 @@ import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.netease.mobsec.rjsb.watchman;
-
+import com.netease.mobsec.rjsb.RequestCallback;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,6 +34,12 @@ public class RegistTask extends AsyncTask<String, Void, String> {
         String username = strings[0];
         String psd = strings[1];
         String nkname = strings[2];
+        String token = watchman.getToken( "your BusinessId",new RequestCallback(){
+            @Override
+            public void onResult(int code, String msg) {
+                Log.e(TAG,"Register, code = " + code + " msg = " + msg);
+            }
+        });
         Map<String, String> params = new HashMap<String, String>();
         params.put("username", username);
         params.put("password", psd);
